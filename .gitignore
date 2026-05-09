@@ -1,0 +1,24 @@
+# Source artifacts (kept locally only) — top-level only, not site/images
+/source.pdf
+/extracted/
+/images/
+
+# Local Claude settings
+.claude/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Node (in case wrangler installs locally)
+node_modules/
+npm-debug.log*
+.wrangler/
+
+# Env
+.env
+.env.local
+.dev.vars
