@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#1a1612"/>
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#f4ede2" font-weight="300">TC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#1a1612"/>
+  <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Cormorant Garamond, Georgia, 'Times New Roman', serif"
+        font-size="36" font-weight="400" fill="#c9a35a"
+        letter-spacing="0.04em">TC</text>
 </svg>
