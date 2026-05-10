@@ -18,18 +18,19 @@ python -m http.server -d site 8000
 
 ## Deploy
 
-Pushes to `main` deploy automatically via `.github/workflows/deploy.yml`.
+Pushes to `main` auto-deploy via the **Cloudflare Pages GitHub App** integration.
 
-### One-time Cloudflare setup
+### One-time setup (already done)
 
-The workflow needs two GitHub secrets:
+1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git**
+2. Select `jefferykarbowski/thecollections`
+3. Build settings:
+   - Framework preset: **None**
+   - Build command: *(empty)*
+   - Build output directory: `site`
+4. Save and Deploy
 
-| Secret                  | Where to get it |
-| ----------------------- | --------------- |
-| `CLOUDFLARE_API_TOKEN`  | Cloudflare dashboard → My Profile → API Tokens → **Create Token** → use the **"Edit Cloudflare Workers"** template (or a custom token with `Account → Cloudflare Pages → Edit`). |
-| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare dashboard → Workers & Pages → right sidebar shows **Account ID**. |
-
-The Cloudflare Pages project is named `thecollections` and is created on first deploy.
+After that, every push to `main` deploys automatically; PRs get preview URLs.
 
 ### Custom domain
 
@@ -51,7 +52,6 @@ site/                 # Static site root (deployed to Cloudflare Pages)
   sitemap.xml
   _headers            # Cloudflare Pages headers (security + caching)
   images/
-.github/workflows/    # CI/CD
 ```
 
 ## Content credit
